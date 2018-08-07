@@ -33,7 +33,16 @@
 **git checkout -b** name 创建+切换分支  
 **git merge** name 合并某分支到当前分支  
 **git branch -d** name 删除分支
- 
+## 分支合并冲突
+**git log --graph**命令可以看到分支合并图  
+## 普通合并
+**git merge --no-ff -m** "merge with no-ff" name
+## 储存工作区
+git stash  储存工作现场 
+git stash list  查看存储列表   
+git stash pop 回到工作现场  
+修复bug时，我们会通过创建新的bug分支进行修复，然后合并，最后删除；
+当手头工作没有完成时，先把工作现场git stash一下，然后去修复bug，修复后，再git stash pop，回到工作现场。
 
 
 
